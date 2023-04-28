@@ -51,6 +51,11 @@ public class UdiTP2 {
                     v2 = sc.nextInt();
                     System.out.println("El area del Rectangulo  es de " + UdiTP2.Arearec(v1, v2));
                     break;
+                case 3:
+                    System.out.println("Ingrese el radio");
+                    double rad = sc.nextInt();
+                    System.out.println("El area del circulo es de " + UdiTP2.Areacir(rad));
+                            
             }
         } while (opcion != 4);
 
@@ -67,7 +72,13 @@ public class UdiTP2 {
        int arear = v1 * v2;
         return arear;
     }
-
+    
+    public static double Areacir (Double rad){
+        double PI = 3.146; 
+        double areac = PI * (rad*rad);
+        return areac;
+    }
+   
 }
     
     
